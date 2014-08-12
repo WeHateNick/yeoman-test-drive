@@ -1,0 +1,16 @@
+/* Slave status circles */
+
+@mixin status-icon($text-color, $icon-color) {
+    list-style: none;
+    margin-top: 10px;
+    color: $text-color;
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        margin: auto 5px;
+        background: $icon-color;
+        border-radius: 50%;
+    }
+}
