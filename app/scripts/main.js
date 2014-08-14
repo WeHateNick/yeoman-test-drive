@@ -2,10 +2,16 @@
 $.getJSON( '../data/employees.json', function(employee) {
 	'use strict';
 	// Loop through JSON array
-	// Place an li for each name
 	$(employee).each(function(i) {
-		$('#slaves').append('<li class="available">' + employee[i].name + '</li>');
+		var availableClass;
+		if (employee[i].inoffice === true) {
+			availableClass = 'available';
+		}
+		else {
+			availableClass = 'unavailable';
+		}
+		// Place an li for each name
+		$('#slaves').append('<li class="' + availableClass + '">' + employee[i].name + '</li>');
 	});
 });
 // Set li class as available or unavailable
-
