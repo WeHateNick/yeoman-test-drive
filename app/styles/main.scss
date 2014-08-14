@@ -15,14 +15,6 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import 'mixins.scss';
 
 
-/* Space out content a bit */
-body {
-    padding-bottom: 20px;
-}
-.container-fluid {
-    padding: 0;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -100,7 +92,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 1000px;
     }
 
     /* Space out the masthead */
